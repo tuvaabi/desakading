@@ -438,26 +438,29 @@
         .fade-in {
             animation: fadeIn 0.8s ease-out;
         }
-        @media (max-width: 768px) {
+ @media (max-width: 768px) {
   .nav-menu {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;              /* taruh di kanan, bukan nempel ke kiri */
+    width: 200px;          /* kasih lebar tertentu, misalnya 200px */
     background: #2c3e50;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px; /* biar sudut bawah agak melengkung */
   }
 
   .nav-menu.active {
     display: flex;
   }
 
-  .mobile-menu-btn {
-    display: block;
+  .nav-menu li {
+    text-align: left;   /* bisa diganti 'center' kalau mau rata tengah */
+    padding: 0.5rem 0;
   }
 }
+
 
     </style>
 </head>
