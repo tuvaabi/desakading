@@ -382,47 +382,7 @@
             padding: 2rem 0;
         }
 
-        /* Mobile Responsive */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #2c3e50;
-                flex-direction: column;
-                padding: 1rem 0;
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero-content h2 {
-                font-size: 2.5rem;
-            }
-
-            .hero-content p {
-                font-size: 1.1rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .about-grid,
-            .services-grid,
-            .institutions-grid,
-            .news-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+      
 
         /* Smooth Scrolling */
         html {
@@ -442,14 +402,14 @@
   .nav-menu {
     display: none;
     position: absolute;
-    top: 100%;       /* turunnya pas di bawah header */
-    right: 0;        /* tempel di kanan */
-    width: 220px;    /* kasih lebar tetap */
+    top: 100%;         /* turunnya tepat di bawah header */
+    right: 0;          /* posisinya nempel kanan */
+    width: 220px;      /* lebar menu */
     background: #2c3e50;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 0 0 0 10px; /* sudut bawah kiri melengkung */
-    box-shadow: -2px 5px 10px rgba(0,0,0,0.2); /* efek bayangan */
+    border-radius: 0 0 0 10px;
+    box-shadow: -2px 5px 10px rgba(0,0,0,0.2);
   }
 
   .nav-menu.active {
@@ -457,10 +417,11 @@
   }
 
   .nav-menu li {
-    text-align: left;   /* bisa 'center' kalau mau rata tengah */
+    text-align: left;
     padding: 0.5rem 0;
   }
 }
+
 
 
     </style>
@@ -778,4 +739,5 @@
     });
   });
 </script>
+
 
